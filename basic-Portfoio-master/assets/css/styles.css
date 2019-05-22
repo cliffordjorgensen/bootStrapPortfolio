@@ -79,48 +79,38 @@ h3 {
     color: black;
 }
 
-
-}
 a:link {
     color: purple;
     background-color: transparent;
     text-decoration: none;
     color: inherit;
 }
+
 a:visited {
     color: rgb(163, 20, 144);
     background-color: transparent;
     text-decoration: none;
     color: inherit;
 }
-a:hover {
-    color: red;
-    background-color: rgb(49, 175, 76);
-    text-decoration: none;
-    color: inherit;
-}
-a:active {
-    color: yellowgreen;
-    background-color: rgb(49, 175, 76);
-    opacity: 0.7;
-    text-decoration: none;
-    color: inherit;
-}
+
 p {
-    margin: 10px;
-    padding: 10px;
+    margin: 13px;
+    padding: 13px;
 }
+
 header {
     background-color: rgb(49, 175, 76);
     border-bottom: 2px solid #cccccc;
     margin-bottom: 5px;
     border-radius: 10px
 }
+
 #insideHeader,
 main {
     width: 960px;
     margin: 0 auto;
 }
+
 #leftOfInsideHeader {
     background-color: forestgreen;
     float: left;
@@ -130,10 +120,12 @@ main {
     border: 3px solid #ddd;
     border-radius: 15px;
 }
+
 #leftOfInsideHeader h1,
 #leftOfInsideHeader h2 {
     color: white;
 }
+
 #rightOfInsideHeader {
     float: right;
     padding: 20px 0;
@@ -142,34 +134,36 @@ main {
     text-align: center;
     background-color: rgb(49, 175, 76);
 }
+
 #rightOfInsideHeader li {
     display: inline-block;
     font-size: .8em;
     margin: 0px;
 }
+
 #rightOfInsideHeader li a {
     padding: 10px;
     color: purple;
     border-radius: 20px
 }
-main {
-    padding: 10px;
-    clear: both;
-}
+
 footer {
     margin-top: 20px;
     padding: 10px 0;
     background-color: lightslategray;
     border-top: 10px solid forestgreen;
 }
+
 footer h6 {
     text-align: center;
 }
+
 img {
     border-radius: 20px;
-    float: left;
-    margin: 0px 5px 0px 0;
+    align-content: center;
+    margin: 5px 5px 0px 0;
 }
+
 #leftOfMain {
     width: 650px;
     padding: 10px;
@@ -177,21 +171,26 @@ img {
     background-color: #fff;
     border-radius: 50px;
 }
+
 #leftOfMain p {
     line-height: 1.5em;
 }
+
 #leftOfMain h3 {
     padding-left: 10px;
     margin-left: 10px;
-    border-bottom: 5px solid purple;
+    border-bottom: 6.66px solid purple;
     border-radius: 50px;
 }
+
 #leftOfMain ol {
     margin-left: 30px;
 }
+
 #leftOfMain ol li {
     padding: 5px;
 }
+
 #rightOfMain {
     width: 270px;
     float: right;
@@ -199,31 +198,59 @@ img {
     text-align: center;
     border-radius: 20px;
 }
-#rightOfMain ul {
-    margin-bottom: 20px;
-    text-size-adjust: 100%;
-    color: black;
-    -ms-word-break: break-all
-}
-#rightOfMain li {
-    display: inline-block;
-    margin: 5px;
-    color: black;
-}
-.group:before,
+
 .group:after {
     content: "";
     display: table;
+    clear: both
 }
-.group:after {
-    clear: both;
+
+.group div {
+    margin-left: 20%;
 }
-.group {
-    zoom: 0;
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
-.tooltip {
-    position: relative;
+
+body {
+    line-height: 1;
 }
-#leftOfMain .tooltip {
-    float: center;
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    /* Misc */
+    content: "";
+    content: none;
+}
+
+table {
+    border-spacing: 0;
+    /* Visual */
+    border-collapse: collapse;
 }
